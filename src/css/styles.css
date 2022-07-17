@@ -60,7 +60,7 @@ section {
 .expense-chart-title {
   color: red;
   color: var(--neutral-0);
-  font-size: 30px;
+  font-size: 34px;
   letter-spacing: -0.1;
 }
 
