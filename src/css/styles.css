@@ -1,0 +1,146 @@
+/* ************************************************* */
+/* imports                                           */
+/* ************************************************* */
+
+@import "./globals/reset.css";
+@import "./globals/colors.css";
+
+/* ************************************************* */
+/* common                                            */
+/* ************************************************* */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--neutral-1);
+  /* background-image: url(../../assets/images/active-states.jpg); */
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 540px;
+  height: 127px;
+  margin-bottom: 20px;
+  padding: 0 31px;
+  background-color: var(--primary-0);
+  border-radius: 20px;
+}
+
+.expense-balance-title {
+  margin-bottom: 6px;
+  color: var(--neutral-2);
+  font-size: 18px;
+}
+
+.expense-balance-value {
+  color: var(--neutral-2);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.expense-balance-logo {
+  margin-right: 7px;
+}
+
+section {
+  width: 540;
+  height: 512px;
+  margin-top: 23px;
+  padding: 31px 40px;
+  background-color: var(--neutral-2);
+  border-radius: 20px;
+}
+
+.expense-chart-title {
+  color: red;
+  color: var(--neutral-0);
+  font-size: 32px;
+  letter-spacing: -0.1;
+}
+
+.expense-chart {
+  display: flex;
+  justify-content: space-between;
+  height: 279px;
+}
+
+.expense-chart-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 48px;
+  height: 100%;
+  padding-bottom: 33px;
+}
+
+.expense-chart-detail {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 41px;
+  margin-bottom: 8px;
+  color: var(--neutral-2);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: var(--neutral-0);
+  border-radius: 6px;
+}
+
+.expense-chart-bar {
+  width: 100%;
+  margin-bottom: 7px;
+  background-color: var(--primary-0);
+  border-radius: 4px;
+  transition: 200ms;
+}
+
+.expense-chart-bar:hover {
+  opacity: 0.8;
+}
+
+.expense-chart-label {
+  color: var(--neutral-3);
+}
+
+.expense-chart-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 119px;
+  border-top: 2px solid var(--neutral-1);
+}
+
+.expense-chart-footer-left-title {
+  color: var(--neutral-3);
+  font-size: 18px;
+}
+
+.expense-chart-footer-left-value {
+  color: var(--neutral-0);
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.expense-chart-footer-right {
+  text-align: right;
+}
+
+.expense-chart-footer-right-value {
+  color: var(--neutral-0);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.expense-chart-footer-right-title {
+  margin-bottom: 8px;
+  color: var(--neutral-3);
+  font-size: 18px;
+}
